@@ -1,0 +1,14 @@
+Description: Depend on Maven Resolver instead of Sonatype Aether
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: no
+--- a/src/main/java/com/webguys/maven/plugin/st/Controller.java
++++ b/src/main/java/com/webguys/maven/plugin/st/Controller.java
+@@ -32,7 +32,7 @@
+ import org.apache.maven.plugin.MojoExecutionException;
+ import org.apache.maven.plugin.logging.Log;
+ import org.apache.maven.project.MavenProject;
+-import org.sonatype.aether.util.artifact.JavaScopes;
++import org.eclipse.aether.util.artifact.JavaScopes;
+ import org.stringtemplate.v4.ST;
+ 
+ import java.io.File;

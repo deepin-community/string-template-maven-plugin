@@ -1,0 +1,12 @@
+--- a/src/main/java/com/webguys/maven/plugin/st/Controller.java
++++ b/src/main/java/com/webguys/maven/plugin/st/Controller.java
+@@ -164,8 +164,7 @@
+         executeMojo(
+             plugin(
+                 groupId("org.apache.maven.plugins"),
+-                artifactId("maven-compiler-plugin"),
+-                version(compilerVersion)
++                artifactId("maven-compiler-plugin")
+             ),
+             goal("compile"),
+             configuration(
